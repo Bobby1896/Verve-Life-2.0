@@ -10,7 +10,7 @@ const styles = ScaledSheet.create({
     justifyContent: 'space-between',
     flexDirection: 'row',
   },
-  loginHeader: {
+  description: {
     marginTop: '30@s',
     fontFamily: 'Rubik-VariableFont_wght',
     fontSize: '24@s',
@@ -21,14 +21,53 @@ const styles = ScaledSheet.create({
     marginTop: '30@s',
     gap: '20@s',
   },
+  name: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '20@s',
+  },
+  firstName: {
+    backgroundColor: '#E8E8E8',
+    width: '145@s',
+    height: '60@s',
+    paddingLeft: '20@s',
+    fontSize: '16@s',
+    fontFamily: 'Rubik-VariableFont_wght',
+  },
+  lastName: {
+    backgroundColor: '#E8E8E8',
+    width: '145@s',
+    height: '60@s',
+    paddingLeft: '20@s',
+    fontSize: '16@s',
+    fontFamily: 'Rubik-VariableFont_wght',
+  },
   mailBox: {
     backgroundColor: '#E8E8E8',
     width: '310@s',
     height: '60@s',
-    borderBottomColor: '#1A73E8',
-    borderBottomWidth: '3@s',
     fontSize: '16@s',
     paddingLeft: '15@s',
+  },
+  contact: {
+    flexDirection: 'row',
+    gap: '20@s',
+  },
+  number: {
+    backgroundColor: '#E8E8E8',
+    width: '100@s',
+    height: '60@s',
+    paddingLeft: '20@s',
+    fontSize: '16@s',
+  },
+  mobileNo: {
+    backgroundColor: '#E8E8E8',
+    width: '190@s',
+    height: '60@s',
+    paddingLeft: '20@s',
+    fontSize: '16@s',
+    fontFamily: 'Rubik-VariableFont_wght',
   },
   keyContent: {
     flexDirection: 'row',
@@ -36,44 +75,21 @@ const styles = ScaledSheet.create({
     width: '310@s',
     justifyContent: 'space-between',
   },
-  passwordBox: {
+  password: {
     height: '60@s',
     fontSize: '16@s',
     fontFamily: 'Rubik-VariableFont_wght',
     paddingLeft: '15@s',
+    paddingLeft: '20@s',
   },
   eyeIcon: {
     marginTop: '15@s',
     marginRight: '10@s',
   },
-  recoverDetails: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    marginTop: '10@s',
+  registerBtn: {
+    marginTop: '30@s',
   },
-  texts: {
-    fontSize: '14@s',
-    fontFamily: 'Rubik-VariableFont_wght',
-  },
-  text: {
-    flexDirection: 'row',
-    gap: '2@s',
-  },
-  span: {
-    fontWeight: '700',
-    fontSize: '14@s',
-    fontFamily: 'Rubik-VariableFont_wght',
-  },
-  buttons: {
-    marginTop: '50@s',
-    gap: '20@s',
-    alignItems: 'center',
-  },
-  or: {
-    fontSize: '16@s',
-    fontFamily: 'Rubik-VariableFont_wght',
-  },
-  login: {
+  register: {
     backgroundColor: '#1A73E8',
     width: '310@s',
     paddingVertical: '15@s',
@@ -81,18 +97,6 @@ const styles = ScaledSheet.create({
     textAlign: 'center',
     borderRadius: '30@s',
     color: '#FFFFFF',
-    fontWeight: '700',
-    fontSize: '18@s',
-    fontFamily: 'Rubik-VariableFont_wght',
-  },
-  register: {
-    backgroundColor: '#C5EDFF',
-    width: '310@s',
-    paddingVertical: '15@s',
-    paddingHorizontal: '20@s',
-    textAlign: 'center',
-    borderRadius: '30@s',
-    color: '#00425F',
     fontWeight: '700',
     fontSize: '18@s',
     fontFamily: 'Rubik-VariableFont_wght',

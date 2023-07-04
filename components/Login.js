@@ -54,7 +54,7 @@ const Login = ({navigation}) => {
 
         <Text style={styles.or}>or</Text>
 
-        <TouchableOpacity onPress={() => navigation.navigate('')}>
+        <TouchableOpacity onPress={() => navigation.navigate('Register')}>
           <Text style={styles.register}>REGISTER</Text>
         </TouchableOpacity>
       </View>
