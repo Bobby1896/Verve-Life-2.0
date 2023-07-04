@@ -2,7 +2,7 @@ import {TouchableOpacity, StatusBar, View, Text, Image} from 'react-native';
 import React from 'react';
 import Swiper from 'react-native-swiper';
 import styles from '../styling/CarouselStyle';
-import ChevronRight from '../reuse/svg';
+import {ChevronRight} from '../reuse/svg';
 
 const Carousel = ({navigation}) => {
   return (
@@ -13,7 +13,7 @@ const Carousel = ({navigation}) => {
         autoplay={true}
         autoplayInterval={8000}>
         <View style={styles.container1}>
-          <StatusBar backgroundColor={'#00000033'} hidden={false} />
+          <StatusBar backgroundColor={'#00000033'} />
           <Image source={require('../images/img1.png')} style={styles.slide1} />
 
           <View style={styles.texts}>
@@ -24,13 +24,9 @@ const Carousel = ({navigation}) => {
               count!
             </Text>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
               <View style={styles.btnContainer}>
-                <Text
-                  onPress={() => navigation.navigate('Login')}
-                  style={styles.btn}>
-                  Get Started
-                </Text>
+                <Text style={styles.btn}>Get Started</Text>
 
                 <ChevronRight style={styles.icon} />
               </View>
@@ -51,13 +47,9 @@ const Carousel = ({navigation}) => {
               fitness buddies {'\n'}from across the world.
             </Text>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
               <View style={styles.btnContainer}>
-                <Text
-                  onPress={() => navigation.navigate('Login')}
-                  style={styles.btn}>
-                  Get Started
-                </Text>
+                <Text style={styles.btn}>Get Started</Text>
 
                 <ChevronRight style={styles.icon} />
               </View>
@@ -78,13 +70,9 @@ const Carousel = ({navigation}) => {
               Card management
             </Text>
 
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Login')}>
               <View style={styles.btnContainer}>
-                <Text
-                  onPress={() => navigation.navigate('Login')}
-                  style={styles.btn}>
-                  Get Started
-                </Text>
+                <Text style={styles.btn}>Get Started</Text>
 
                 <ChevronRight style={styles.icon} />
               </View>

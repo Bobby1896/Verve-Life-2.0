@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SplashScreen from './components/SplashScreen';
 import Carousel from './components/Carousel';
+import Login from './components/Login';
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -14,9 +15,15 @@ const App = () => {
           component={SplashScreen}
           options={{headerShown: false}}
         />
+
         <Stack.Screen
           name="Carousel"
           component={Carousel}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
