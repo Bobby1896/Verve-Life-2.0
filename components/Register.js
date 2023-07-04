@@ -41,7 +41,8 @@ const Register = ({navigation}) => {
         </View>
 
         <View style={styles.registerBtn}>
-          <TouchableOpacity onPress={() => navigation.navigate('')}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('MessageVerification')}>
             <Text style={styles.register}>CREATE ACCOUNT</Text>
           </TouchableOpacity>
         </View>

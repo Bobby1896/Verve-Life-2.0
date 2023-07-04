@@ -5,6 +5,7 @@ import SplashScreen from './components/SplashScreen';
 import Carousel from './components/Carousel';
 import Login from './components/Login';
 import Register from './components/Register';
+import MessageVerification from './components/MessageVerification';
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -30,6 +31,11 @@ const App = () => {
         <Stack.Screen
           name="Register"
           component={Register}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="MessageVerification"
+          component={MessageVerification}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

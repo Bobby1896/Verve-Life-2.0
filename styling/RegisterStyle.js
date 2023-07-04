@@ -92,7 +92,7 @@ const styles = ScaledSheet.create({
   register: {
     backgroundColor: '#1A73E8',
     width: '310@s',
-    paddingVertical: '15@s',
+    paddingVertical: '12@s',
     paddingHorizontal: '20@s',
     textAlign: 'center',
     borderRadius: '30@s',
