@@ -7,19 +7,22 @@ import {
 } from 'react-native';
 import React from 'react';
 import {ChevronLeft, QuestionMark} from '../reuse/svg';
-import styles from '../styling/MessageVerificationStyle';
+import styles from '../styling/PinCreationStyle';
 
-const MessageVerification = ({navigation}) => {
+const PinCreation = ({navigation}) => {
   return (
     <SafeAreaView style={styles.overAllContainer}>
       <View style={styles.iconHeader}>
-        <ChevronLeft onPress={() => navigation.navigate('Login')} />
+        <ChevronLeft
+          onPress={() => navigation.navigate('MessageVerification')}
+        />
         <QuestionMark />
       </View>
 
-      <Text style={styles.description}>We sent you a message</Text>
+      <Text style={styles.description}>Create Your 4-Digit PIN</Text>
       <Text style={styles.smsTexts}>
-        Please enter the 4 digit code we sent via text message to +2348180000456
+        To protect the security of youe Verve eCash wallet, please register a
+        4-Digit PIN code.
       </Text>
 
       <View style={styles.boxContainer}>
@@ -29,17 +32,13 @@ const MessageVerification = ({navigation}) => {
         <TextInput style={styles.box4} placeholder=""></TextInput>
       </View>
 
-      <Text style={styles.time}>The text should arrive within 45 seconds</Text>
-
-      <Text style={styles.changeNo}>Change my phone number</Text>
-
-      <View style={styles.continueBtn}>
-        <TouchableOpacity onPress={() => navigation.navigate('PinCreation')}>
-          <Text style={styles.continue}>CONTINUE</Text>
+      <View style={styles.savePinBtn}>
+        <TouchableOpacity onPress={() => navigation.navigate('')}>
+          <Text style={styles.pin}>SAVE PIN</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
 };
 
-export default MessageVerification;
+export default PinCreation;

@@ -6,6 +6,7 @@ import Carousel from './components/Carousel';
 import Login from './components/Login';
 import Register from './components/Register';
 import MessageVerification from './components/MessageVerification';
+import PinCreation from './components/PinCreation';
 
 const Stack = createNativeStackNavigator();
 const App = () => {
@@ -36,6 +37,11 @@ const App = () => {
         <Stack.Screen
           name="MessageVerification"
           component={MessageVerification}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="PinCreation"
+          component={PinCreation}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
