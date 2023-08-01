@@ -25,10 +25,10 @@ const styles = ScaledSheet.create({
     backgroundColor: '#E8E8E8',
     width: '310@s',
     height: '60@s',
-    borderBottomColor: '#1A73E8',
-    borderBottomWidth: '3@s',
     fontSize: '16@s',
     paddingLeft: '15@s',
+    borderColor: '#1A73E8',
+    borderBottomWidth: 2,
   },
   keyContent: {
     flexDirection: 'row',
